@@ -3,7 +3,7 @@
     "displayName": "Aider",
     "description": "VSCode extension for running Aider",
     "icon": "images/AiderExtension.png",
-    "version": "0.0.9",
+    "version": "0.1.0",
     "publisher": "MattFlower",
     "repository": {
         "type": "git",
@@ -37,12 +37,17 @@
                 "aider.commandLine": {
                     "type": "string",
                     "default": "aider",
-                    "description": "Set that command to run aider.  This can be a path to a binary or a command that is available on the path.  You may also include parameters to aider."
+                    "description": "Set that command to run aider. This can be a path to a binary or a command that is available on the path. You may also include parameters to aider."
                 },
                 "aider.workingDirectory": {
                     "type": "string",
                     "default": "",
                     "description": "Set the working directory for Aider. Leave empty to use the workspace root or the directory of the active file."
+                },
+                "aider.model": {
+                    "type": "string",
+                    "default": "gpt-3.5-turbo",
+                    "description": "The model to use for Aider."
                 }
             }
         },
